@@ -1,0 +1,16 @@
+{
+    "name": "devit/hasoffers-laravel-client",
+    "description": "Laravel wrapper hasoffers sdk",
+    "type": "library",
+    "authors": [
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "devit/hasoffers-php-client": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevIT\\HasOffersLaravel\\": "src/"
+        }
+    }
+}
