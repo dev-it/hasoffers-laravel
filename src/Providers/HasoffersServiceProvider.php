@@ -1,6 +1,6 @@
 <?php
 
-namespace DevIT\HasoffersLaravel\Providers;
+namespace DevIT\Hasoffers\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
