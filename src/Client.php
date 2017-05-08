@@ -1,5 +1,5 @@
 <?php
-namespace DevIT\HasoffersLaravel;
+namespace DevIT\Hasoffers\Laravel;
 
 class Client {
 
