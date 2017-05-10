@@ -16,7 +16,7 @@ class HasoffersServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/hasoffers.php' => config_path('hasoffers.php'),
+            __DIR__ . '/../../config/hasoffers.php' => config_path('hasoffers.php'),
         ], 'config');
     }
 
