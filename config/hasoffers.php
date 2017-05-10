@@ -6,4 +6,4 @@ return [
 
     // Network id
     'network_id' => '',
-]
+];
