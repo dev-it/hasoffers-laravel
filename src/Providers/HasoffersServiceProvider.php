@@ -2,6 +2,7 @@
 
 namespace DevIT\Hasoffers\Laravel\Providers;
 
+use DevIT\HasOffers\Laravel\Client;
 use Illuminate\Support\ServiceProvider;
 
 class HasoffersServiceProvider extends ServiceProvider
@@ -19,8 +20,8 @@ class HasoffersServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('Hasoffers\Client', function ($app) {
-            return new DevIT\HasOffers\Laravel\Client(config('services.hasoffers.key'), config('services.hasoffers.network_id'));
+        $this->app->singleton(Client::class, function ($app) {
+            return new Client(config('services.hasoffers.key'), config('services.hasoffers.network_id'));
         });
     }
 }
