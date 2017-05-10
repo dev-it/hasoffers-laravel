@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DevIT\\HasOffersLaravel\\": "src/"
+            "DevIT\\HasOffers\\Laravel\\": "src/"
         }
     }
 }
