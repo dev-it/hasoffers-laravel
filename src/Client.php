@@ -7,14 +7,27 @@ class Client {
 
     protected $client;
 
-    public function __construct()
+    public function __construct($key, $networkId)
     {
-        $this->hasoffers = new \DevIT\Hasoffers\Client(config('hasoffers.key'), config('hasoffers.network_id'));
+        $this->hasoffers = new \DevIT\Hasoffers\Client($key, $networkId);
+
     }
 
-    function offers($parameters = [])
+    public function offers($parameters = [])
     {
         $this->client = $this->hasoffers->api('Brand\Offer');
-        return $this->client->findAll();
+
+        $resp = $this->client->findAll($parameters);
+
+        return collect($resp->response->data);
+    }
+
+    public function affiliates($parameters = [])
+    {
+        $client = $this->hasoffers->api('Brand\Affiliate');
+        
+        $resp = $client->findAll($parameters);
+
+        return collect($resp->response->data);
     }
 }
