@@ -1,14 +1,9 @@
 <?php
 
-namespace Mollie\Laravel\Facades;
+namespace DevIT\Hasoffers\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-/**
- * (Facade) Class Mollie.
- *
- * @method static MollieApiWrapper api()
- */
 class Hasoffers extends Facade
 {
     /**
