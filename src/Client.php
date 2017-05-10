@@ -7,9 +7,9 @@ class Client {
 
     protected $client;
 
-    public function __construct()
+    public function __construct($key, $networkId)
     {
-        $this->hasoffers = new \DevIT\Hasoffers\Client(config('hasoffers.key'), config('hasoffers.network_id'));
+        $this->hasoffers = new \DevIT\Hasoffers\Client();
     }
 
     public function offers($parameters = [])

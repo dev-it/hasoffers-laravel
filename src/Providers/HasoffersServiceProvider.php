@@ -23,7 +23,7 @@ class HasoffersServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(Client::class, function ($app) {
-            return new Client();
+            return new Client(config('hasoffers.key'), config('hasoffers.network_id'));
         });
 
         $this->app->alias(Client::class, 'hasoffers');
