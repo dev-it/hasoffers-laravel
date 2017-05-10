@@ -15,7 +15,7 @@ class Client {
 
     function offers($parameters = [])
     {
-        $this->client = $this->hasOffers->api('Brand\Offer');
+        $this->client = $this->hasoffers->api('Brand\Offer');
         return $this->client->findAll();
     }
 }
