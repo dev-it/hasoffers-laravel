@@ -9,7 +9,7 @@ class Client {
 
     public function __construct()
     {
--        $this->hasoffers = new \DevIT\Hasoffers\Client(config('hasoffers.key'), config('hasoffers.network_id'));
+        $this->hasoffers = new \DevIT\Hasoffers\Client(config('hasoffers.key'), config('hasoffers.network_id'));
     }
 
     public function offers($parameters = [])
