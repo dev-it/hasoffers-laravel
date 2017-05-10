@@ -11,11 +11,11 @@ class Client {
     {
         $this->hasoffers = new \DevIT\Hasoffers\Client($key, $networkId);
 
-        $this->client = $this->hasOffers->api('Brand\Offer');
     }
 
     function offers($parameters = [])
     {
+        $this->client = $this->hasOffers->api('Brand\Offer');
         return $this->client->findAll();
     }
 }
