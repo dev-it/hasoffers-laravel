@@ -36,6 +36,19 @@ class Client {
 
         $resp = $client->findById(['transaction_id' => $id]);
 
-        return $resp->response->data;
+        if (! $resp->response->data) {
+            return null;
+        }
+
+        return $resp->response->data->Conversion;
+    }
+
+    public function conversions($parameters = [])
+    {
+        $client = $this->hasoffers->api('Brand\Conversion');
+        
+        $resp = $client->findAll($parameters);
+
+        return collect($resp->response->data);
     }
 }
