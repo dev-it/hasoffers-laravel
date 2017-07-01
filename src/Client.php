@@ -29,4 +29,13 @@ class Client {
 
         return collect($resp->response->data);
     }
+
+    public function findConversion($id)
+    {
+        $client = $this->hasoffers->api('Brand\Conversion');
+
+        $resp = $client->findById(['transaction_id' => $id]);
+
+        return $resp->response->data;
+    }
 }
