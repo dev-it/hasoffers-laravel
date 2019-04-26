@@ -3,7 +3,7 @@ namespace DevIT\Hasoffers\Laravel;
 
 class Client {
 
-    protected $hasoffers;
+    public $hasoffers;
 
     protected $client;
 
