@@ -12,5 +12,13 @@
         "psr-4": {
             "DevIT\\Hasoffers\\Laravel\\": "src/"
         }
+    },
+    "laravel": {
+        "providers": [
+            "DevIT\\Hasoffers\\Laravel\\Providers\\HasoffersServiceProvider"
+        ],
+        "aliases": {
+            "Debugbar": "DevIT\\Hasoffers\\Laravel\\Facades\\Hasoffers"
+        }
     }
 }
